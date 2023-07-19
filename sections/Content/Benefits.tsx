@@ -47,7 +47,7 @@ export default function Benefits(
     return (
       <div
         class={`${
-          reverse ? "bg-primary text-primary-content p-4 lg:px-8 lg:py-4" : ""
+          reverse ? "bg-secondary text-primary-content p-4 lg:px-8 lg:py-4" : ""
         } flex gap-4 ${
           benefitLayout == "piledup" ? "flex-col items-center text-center" : ""
         } ${
@@ -61,7 +61,7 @@ export default function Benefits(
         <div class="flex-none">
           <Icon
             id={benefit.icon}
-            class={reverse ? "text-base-100" : "text-primary"}
+            class={reverse ? "text-primary" : "text-primary"}
             width={36}
             height={36}
             strokeWidth={0.01}
@@ -70,14 +70,14 @@ export default function Benefits(
         </div>
         <div class="flex-auto flex flex-col gap-1 lg:gap-2">
           <div
-            class={`text-base lg:text-xl leading-7 ${
-              reverse ? "text-base-100" : "text-base-content"
+            class={`text-primary lg:text-xl leading-7 ${
+              reverse ? "text-base-100" : "text-primary-content"
             }`}
           >
             {benefit.label}
           </div>
           <p
-            class={`text-sm leading-5 ${
+            class={`text-primary leading-5 ${
               reverse ? "text-base-100" : "text-neutral"
             } ${benefitLayout == "piledup" ? "hidden lg:block" : ""}`}
           >
